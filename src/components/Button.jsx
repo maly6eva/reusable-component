@@ -14,7 +14,6 @@ export const Button = ({
                        }) => {
     return (
 <button className={`button ${variant} ${size} ${isDisabled ? 'disabled' : ''} ${fullWidth ? 'full-width' : ''} `} onClick={onClick}>
-    {/*{icon && <span>{icon}</span>}*/}
     {children}
 </button>
     );

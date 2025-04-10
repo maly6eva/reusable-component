@@ -15,26 +15,35 @@ function App() {
         setShowInstructions((prev) => !prev);
     };
 
-
     function handleClick() {
-        alert('ksik')
+        alert('click')
     }
     return (
         <div className="app">
             <Header showInstructions={showInstructions} toggleInstructions={toggleInstructions}/>
             <Instructions showInstructions={showInstructions}/>
             <Main>
-                <Section ></Section>
-                <Section>
-                    <Button onClick={handleClick} fullWidth>Ksenia</Button>
-                    <Button isDisabled>Valery</Button>
-                    <Button variant='secondory'> Dima</Button>
-                    <Button variant='secondory' size={'large'}> Dima</Button>
+                <Section title='Variants'>
+                    <Button variant='primary'>Primary</Button>
+                    <Button  variant='secondary'>Secondary</Button>
+                    <Button  variant='danger'>Danger</Button>
+                    <Button  variant='gradient'>Gradient</Button>
+                    <Button  variant='outline'>Outline</Button>
                 </Section>
-                <Section>
-                    <Button></Button>
-                    <Button></Button>
-                    <Button></Button>
+                <Section title='Sizes'>
+                    <Button  variant='primary' size='large'>Large</Button>
+                    <Button  variant='primary'  size='medium'>Medium</Button>
+                    <Button  variant='primary'  size='small'>Small</Button>
+                </Section>
+                <Section title='Button Statets'>
+                    <Button isDisabled>Disabled</Button>
+                    <Button>Difault</Button>
+                </Section>
+                <Section title='Full Width Button'>
+                    <Button fullWidth>Full Width</Button>
+                </Section>
+                <Section title='Width Fn' >
+                    <Button onClick={handleClick}>Click me</Button>
                 </Section>
             </Main>
             <Footer/>
