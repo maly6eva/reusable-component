@@ -1,4 +1,5 @@
 import React from 'react';
+import {Button} from "./Button.jsx";
 
 export const Main = () => {
     return (
@@ -6,6 +7,9 @@ export const Main = () => {
             <section className="component-group">
                 <h2>Variants</h2>
                 <div className="component-card">
+                    <Button text={'Hello, Ksenia!'}/>
+                    <Button variant='primary' icon='🐹' fullWidth={'full-width'} />
+                    <Button />
                     <button className="button primary">Primary</button>
                     <button className="button secondary">Secondary</button>
                     <button className="button danger">Danger</button>
