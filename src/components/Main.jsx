@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button} from "./Button.jsx";
 
-export const Main = () => {
+export const Main = ({handleClick}) => {
     return (
         <main className="component-showcase">
             <section className="component-group">
@@ -11,7 +11,7 @@ export const Main = () => {
                     {/*<Button variant='primary' icon='🐹' fullWidth={'full-width'} />*/}
                     {/*<Button />*/}
                     <Button><span>⏮️</span>Ksenia!</Button>
-                    <Button>Ksenia!<span>⏩️</span></Button>
+                    <Button onClick={handleClick}>Ksenia!<span>⏩️</span></Button>
                     <button className="button primary">Primary</button>
                     <button className="button secondary">Secondary</button>
                     <button className="button danger">Danger</button>

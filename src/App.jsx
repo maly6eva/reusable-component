@@ -13,11 +13,15 @@ function App() {
         setShowInstructions((prev) => !prev);
     };
 
+
+    function handleClick() {
+        alert('ksik')
+    }
     return (
         <div className="app">
             <Header showInstructions={showInstructions} toggleInstructions={toggleInstructions}/>
             <Instructions showInstructions={showInstructions}/>
-            <Main/>
+            <Main handleClick={handleClick}/>
             <Footer/>
         </div>
     );
